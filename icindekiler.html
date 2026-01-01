@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İÇİNDEKİLER</title>
+
+    <!-- Stil dosyan aynen kullanılacak -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- GİZLİ PAN KONTROLCÜSÜ -->
+    <div id="pan-controller"></div>
+
+    <!-- HAREKET EDEN ANA KATMAN -->
+    <div id="movable-layer">
+
+        <!-- SOL SAYFA (BOŞ KAPAK) -->
+        <div class="book-container left-page-placeholder">
+            <!-- bilerek boş -->
+        </div>
+
+        <!-- SAĞ SAYFA (BOŞ İÇ SAYFA / CV / PROJE vs.) -->
+        <div class="book-container cv-wrapper">
+
+         <div class="page right-page">
+            <div class="header-box">
+                <h2>İÇİNDEKİLER</h2>
+            </div>
+            
+            <div class="content-list">
+                <!-- 1. Satır -->
+                <div class="item item-row-1">
+                    <div class="img-box"><img src="resim1.jpg" alt=""></div>
+                    <div class="text-box">
+                        <p>FİZİKSEL ÇEVRE KONTROLÜ 2</p>
+                        <p>DESEN ATÖLYESİ</p>
+                    </div>
+                </div>
+                <!-- 2. Satır -->
+                <div class="item item-row-2">
+                    <div class="text-box">
+                        <p>FİZİKSEL ÇEVRE KONTROLÜ 2</p>
+                        <p>DESEN ATÖLYESİ</p>
+                    </div>
+                    <div class="img-box"><img src="resim2.jpg" alt=""></div>
+                </div>
+            </div>
+        </div>   
+    </div>
+
+    <!-- SAĞ / SOL GEÇİŞ ALANLARI -->
+    <div class="hotspot hotspot-prev"></div>
+    <div class="hotspot hotspot-next"></div>
+    <a href="cv.html" class="hotspot hotspot-next"></a>
+     <a href="index.html" class="hotspot hotspot-prev"></a>
+    <!-- JS aynı kalacak -->
+    <script src="script.js"></script>
+</body>
+</html>
